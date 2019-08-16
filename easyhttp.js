@@ -9,7 +9,7 @@ easyHTTP.prototype.get = function (url) {
     let self = this;
     this.http.onload = function () {
         if (self.http.status === 200) {
-            console.log(this.http.responseText);
+            console.log(self.http.responseText);
         }
     }
 
